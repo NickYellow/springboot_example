@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../../static/css/style.css">
+    <link th:href="@{/webjar/bootstrap/4.3.1/css/bootstrap.min.css}"
+          href="https://cdn.jsdelivr.net/webjar/bootstrap/4.3.1/css/bootstrap.min.css"
+        rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="row text-center">
+            <div class="row">
+               <!-- <h2>Spring MVC Application</h2>-->
+            </div>
+        </div>
+        <div class="row text-center">
+            <!--<img src="/Users/yaoyi.huang/IdeaProjects/springmvc/src/main/resources/static/css/image/Screen Shot 2019-05-10 at 20.10.00.png" width="30%"
+
+                th:src="@{/image/Screen Shot 2019-05-10 at 20.10.00.png}" />-->
+        </div>
+    </div>
+
+    <div class="container">
+        <div th:fragment="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a th:href="@{/products}">Products</a>
+                            </li>
+                            <li>
+                                <a th:href="@{/products/add}">Create Products</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
